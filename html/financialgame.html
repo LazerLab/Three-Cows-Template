@@ -1,0 +1,2644 @@
+
+	
+<table border="0" id="step1" class="financialgametable" align="center" width="800" height="600">
+    <tr>
+        <td width="800" colspan="5" height="8"></td>
+    </tr>
+    <tr>
+        <td width="70"></td>
+        <td width="426"><table><tr><td><button id="addtimebut" type="submit" class="btn-largemp" onClick="setPlus30Count(getPlus30Count()+1);setRound(1+getPlus30Count());submit('+30 Seconds');"><i class="icon-plus icon-white"></i>30 Seconds</button></td><td id="addedsecs"></td></tr></table>
+		</td>
+        <td width="60" valign="top">
+            <p align="right"><font face="Verdana"><span style="font-size:14pt; color:black;" id="insttimer"></span></font></p>
+        </td>
+        <td width="5" valign="top"></td>
+        <td width="227" valign="top">
+            <p align="left"><font face="Verdana"><span style="font-size:14pt; color:black;" id="step1secrem">seconds remaining</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="800" colspan="5">
+            <p align="center"><font face="Verdana" color="#FF3333"><span id="insttitle"></span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="800" colspan="5">
+            <table align="center" id="instructiontable" border="0" width="555" height="450">
+            </table>
+        </td>
+    </tr>
+</table>
+	
+<table border="0" id="step2" width="800" class="financialgametable" align="center">
+    <tr>
+        <td width="794">
+			<div id="statsContainer">
+
+			</div>
+			<div id="infodiv" style="text-align:left; width: 800px; overflow: auto;">
+				<table align="center" border="0" id="midtable" width="775">
+				<tr>
+					<td width="775">
+
+					<table align="center" id="infotable" border="0">
+					<tr><td></td></tr>
+					</table>
+					</td>
+				</tr>
+				</table>
+			</div>
+		</td>
+    </tr>
+    <tr>
+        <td width="794" height="80">
+		<div id="butholder" style="height: 80px;">
+            <div style="text-align: center; height: 30px; line-height:30px;"><font face="Verdana" ><span style="font-size:12pt; color: #0e76bc;" id="selectedbuttext"></span></font></div>
+			<table id="buts" border="0" align="center" width="794">
+			</table>
+		</div>
+		</td>
+    </tr>
+</table>
+
+<table border="0" id="step3" class="financialgametable" align="center" width="800" height="600">
+    <tr>
+        <td width="800" colspan="5" height="8"></td>
+    </tr>
+    <tr>
+        <td width="123"></td>
+        <td width="373">
+		</td>
+        <td width="60" valign="top">
+            <p align="right"><font face="Verdana"><span style="font-size:14pt; color:black;" id="resulttimertext"></span></font></p>
+        </td>
+        <td width="5" valign="top"></td>
+        <td width="227" valign="top">
+            <p align="left"><font face="Verdana"><span style="font-size:14pt; color:black;">seconds remaining</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="800" colspan="5">
+            <table align="center" border="0" width="555" height="450">
+                <tr>
+					<td width="555" height="150">
+					<table align="center" width="350">
+						<tr>
+							<td width="350" height="15">
+							</td>
+						</tr>
+						<tr>	
+							<td width="352">
+							<p align="center">
+							<img class="img-inst" align="middle" id="resultimage" src="#">
+							</p>
+							</td>				
+						</tr>
+						<tr>	
+							<td width="352" colspan="3" height="86"><div id="resulttextdiv"><div style='margin-left:6px; margin-right:6px; margin-top:5px; margin-bottom:5px; width:338px; height:90px; word-wrap:break-word;'><small id="resulttext" class='smallinst'></small></div></div></td>
+						</tr>
+					</table>
+					</td>
+                </tr>
+                <tr>
+					<td width="690" height="150">
+					<table align="center" width="690">
+						<tr>
+							<td width="690" height="25">
+							</td>
+						</tr>
+						<tr>
+							<td width="220" height="13">
+								<p align="center"><span style="font-size:12pt; color:black;"><font face="Verdana" id="yourearntext"></font></span></p>
+							</td>
+							<td width="34" height="126" rowspan="2"></td>
+							<td width="421" height="126" rowspan="2">
+								<div id="resultdiv" class="grid_8" style="text-align:left; width:421px; height: 126px; overflow-x: auto; overflow-y: auto;">	
+									<table id="resulttable" class="fancyTable" cellspacing="0" cellspacing="0">
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr>	
+							<td width="220" height="90">
+								<div id="earnresult">
+								</div>
+							</td>
+						</tr>
+					</table>
+					</td>
+                </tr>
+                <tr>
+					<td width="555" height="46">
+					<p align="center">
+					<table align="center" width="555">
+						<tr>			
+							<td width="185" height="58">
+							</td>
+							<td width="185" height="58">
+								<p align="center">
+								<button id="nextrndbut" type="submit" class="btn btn-primary" onClick=";">
+								<i class="icon-arrow-right icon-white"></i> Next Round
+								</button>
+								</p>
+							</td>
+							<td width="185" height="58">
+							</td>
+						</tr>
+					</table>
+					</p>
+					</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table border="0" id="step4" class="financialgametable" align="center" width="800" height="600">
+    <tr>
+        <td width="800" colspan="5" height="8"></td>
+    </tr>
+    <tr>
+        <td width="123"></td>
+        <td width="373">
+		</td>
+        <td width="60">
+            <p align="right"><font face="Verdana"><span style="font-size:14pt; color:black;" id="finalresulttext"></span></font></p>
+        </td>
+        <td width="5"></td>
+        <td width="227">
+            <p align="left"><font face="Verdana"><span style="font-size:14pt; color:black;">seconds remaining</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="800" colspan="5">
+            <table align="center" border="0" width="800" height="400">
+                <tr>
+					<td width="800" height="400">
+					<table align="center" width="600">
+						<tr>
+                            <td width="800" height="50"></td>
+						</tr>
+						<tr>
+							<td width="800" height="300">
+							    <table align="center" border="0" width="350" height="300">
+								<tr>
+									<td width="350" height="300">
+										<div id="finalresultdiv" class="grid_8" style="text-align:left; width:350px; height: 300px; overflow-x: auto; overflow-y: auto;">	
+											<table id="finalresulttable" class="fancyTable" cellspacing="0" cellspacing="0">
+											</table>
+										</div>
+									</td>
+								</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+                            <td width="800" height="20"></td>
+						</tr>
+                        <tr>
+                            <td width="800" height="45">
+								<p align="center">
+									<font face="Verdana" ><span style="font-size:12pt; color: #3a87ad;">
+									Thank you for your participation. Click <a href="/stop_test/" onClick='stopPinging();'> here</a>&nbsp;to quit the experiment...
+									</span></font>
+								</p>
+                            </td>
+                        </tr>
+					</table>
+					</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table border="0" id="polling" class="financialgametable" align="center" width="800" height="600">
+    <tr>
+        <td width="800" colspan="5" height="8"></td>
+    </tr>
+    <tr>
+        <td width="123"></td>
+        <td width="373">
+		</td>
+        <td width="60">
+            <p align="right"><font face="Verdana"><span style="font-size:14pt; color:black" id="pollingtimertext"></span></font></p>
+        </td>
+        <td width="5"></td>
+        <td width="227">
+            <p align="left"><font face="Verdana"><span style="font-size:14pt; color:black">seconds remaining</span></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="800" colspan="5">
+            <table align="center" border="0" width="600" height="400">
+                <tr>
+					<td width="600" height="400">
+					<table align="center" width="600">
+						<tr>
+                            <td width="600" height="60"></td>
+						</tr>
+						<tr>
+							<td width="600" height="140">
+								<p align="center">
+								<img class="img-inst" align="middle" id="pollingimage" src="#">
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="600" height="140">
+								<p align="center">
+								<font face="Verdana" ><span id="pollingtext"></span></font>
+								</p>	
+							</td>
+						</tr>
+                        <tr>
+                            <td width="600" height="60">
+                            </td>
+                        </tr>
+					</table>
+					</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+
+var instructionsPage;
+var expRoundNum;
+var Step1Timer;
+var Step2Timer;
+var Step3Timer;
+var Step4Timer;
+var timeoutStep1=-1;
+var timeoutStep2=-1;
+var timeoutStep3=-1;
+var timeoutStep4=-1;
+var playersForRound;
+var prevRoundPayoffs;
+var prevRoundChoices;
+var totalPayoffs;
+var averagePayoffs;
+var availableChoicesComb;
+var payoffcaption;
+var minimumParticipants;
+var scores;
+var waitThisRound=true;
+var iControlBots = false;
+var readyArray;
+var paper;
+var roundText;
+var step2TimeRemText;
+var step2TimeRemCaptionText;
+var statsContainerArr;
+var startRank;
+var arrowButs;
+var plus30Count;
+var addedSecsTimer;
+var timeoutAddedSecs;
+var iAmReady;
+var matched, browser;
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+	for (var i in document.styleSheets) {
+		if(document.styleSheets[i].href!=undefined&&document.styleSheets[i].href.indexOf("financialgame.")>=0)
+			document.styleSheets.item(i).disabled=true;
+		if(document.styleSheets[i].href!=undefined&&document.styleSheets[i].href.indexOf("financialgame_mobile.")>=0)
+			document.styleSheets.item(i).enabled=true;
+	}
+}
+else{
+	for (var i in document.styleSheets) {
+		if(document.styleSheets[i].href!=undefined&&document.styleSheets[i].href.indexOf("financialgame_mobile.")>=0)
+			document.styleSheets.item(i).disabled=true;
+		if(document.styleSheets[i].href!=undefined&&document.styleSheets[i].href.indexOf("financialgame.")>=0)
+			document.styleSheets.item(i).enabled=true;
+	}
+}
+
+jQuery.uaMatch = function( ua ) {
+ua = ua.toLowerCase();
+var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+		/(webkit)[ \/]([\w.]+)/.exec( ua ) ||
+		/(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
+		/(msie) ([\w.]+)/.exec( ua ) ||
+		ua.indexOf("compatible") < 0 && /(mozilla)(?:.*?rv:([\w.]+)|)/.exec( ua ) || [];
+	return {
+		browser: match[ 1 ] || "",
+		version: match[ 2 ] || "0"
+	};
+};
+matched = jQuery.uaMatch( navigator.userAgent );
+browser = {};
+if ( matched.browser ) {
+	browser[ matched.browser ] = true;
+	browser.version = matched.version;
+}
+if ( browser.chrome ) {
+	browser.webkit = true;
+} else if ( browser.webkit ) {
+	browser.safari = true;
+}
+$.browser = browser;
+
+setRound(1);
+$('#addtimebut').hide();
+$('#step1secrem').html('&nbsp;');
+
+function initialize()
+{
+	initVars();
+	this.paper;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		this.paper= Raphael("statsContainer", 800, 170);
+	else
+		this.paper= Raphael("statsContainer", 800, 160);
+	minimumParticipants=(Math.log(eval(variables['payoff'])[0].length)/Math.log(eval(variables['payoff']).length))+1;
+	instructionsPage=1;
+	this.payoffcaption=new Array();
+	this.availableChoicesComb=new Array();
+	this.playersForRound=new Array();
+	this.prevRoundPayoffs=new Array();
+	this.prevRoundChoices=new Array();
+	this.totalPayoffs=new Array();
+	this.averagePayoffs=new Array();
+	initializeExperimentDetails();
+	$('#step1').show();
+	$('#step2').hide();
+	$('#step3').hide();
+	$('#step4').hide();
+	$('#polling').hide();
+	this.plus30Count=0;
+	this.addedSecsTimer=5;
+	this.iAmReady=false;
+	this.readyArray=new Array();
+	for(var u=0; u<this.readyArray.length; u++)
+		this.readyArray[u]=false;
+}
+
+function getPlus30Count(){
+	return this.plus30Count;
+}
+
+function setPlus30Count(val){
+	this.plus30Count = val;
+}
+
+function addedSecsCountDown(){  
+	 if (this.addedSecsTimer <=0){
+		$('#addedsecs').html('');
+		clearTimeout(this.timeoutAddedSecs);
+		this.addedSecsTimer=5;
+	 }else{  
+		this.addedSecsTimer--;
+		this.timeoutAddedSecs=setTimeout("addedSecsCountDown()", 1000);
+	 }  
+}
+
+function newMove(participant, index) {
+  fetchMove(participant, currentRound, index, function(val) {
+	if(val=="+30 Seconds")
+	{
+		if(participant!=myid)
+		{
+			this.plus30Count++;
+			$('#addedsecs').html("<span style=\"font-size:11pt; color:black;\"> "+getName(parseInt(participant))+" added 30 seconds.</span>");
+			addedSecsCountDown();
+		}
+		else
+		{
+			$('#addedsecs').html("<span style=\"font-size:11pt; color:black;\"> Successfully added 30 seconds.</span>");
+			addedSecsCountDown();
+		}
+		setRound(2+getPlus30Count());
+		this.Step1Timer+=30;
+		return;
+	}
+
+	if(this.playersForRound.length==0)
+	{
+		//experimentID=parseInt(val.substring(1,14));
+		//$('#expid').html('Experiment #'+experimentID);
+		//val=val.substring(15, val.length);
+		var tarr=val.split("</activePlayers>");
+		for(var p=0;p<tarr.length;p++)
+		{
+			if(tarr[p].length>0)
+			{
+				var rarr=eval("["+tarr[p].substring(tarr[p].indexOf(">")+1)+"]");
+				this.playersForRound.push(rarr);
+			}
+		}
+		setRound(2+this.plus30Count);
+		try {
+			if (awards[myid]["instructions"]["count"] > 0) {
+				$('#begininsbut').show();
+			}
+		} catch(err) {}
+		return;
+	}
+	if(val=='Ready'&&this.readyArray[participant-1]==true)
+		return;
+	var readyCount=0;
+	for(var u=0; u<this.readyArray.length; u++)
+		if(this.readyArray[u]==true)
+			readyCount++;
+	if(readyCount<numPlayers)
+	{
+		if(val=='Ready')
+		{
+			this.readyArray[participant-1]=true;
+			readyCount++
+		}
+		if(readyCount==numPlayers)
+		{
+			writeAward("instructions",0);
+			setRound(2+this.expRoundNum+this.plus30Count);
+			if(parseInt(variables['Enable Polling'])==1)
+			{
+				this.waitThisRound=true;
+				for(var i=0; i<getPlayersForRound(this.expRoundNum-1).length; i++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[i]==myid)
+						this.waitThisRound=false;
+				}
+				if(minimumParticipants==numPlayers+parseInt(variables['Bot_Count']))
+					this.waitThisRound=false;
+				if(this.waitThisRound)
+				{
+					$('#step1').hide();
+					$('#polling').show();
+				}
+				else
+				{
+					$('#step1').hide();
+					$('#step2').show();
+				}
+			}
+			else
+			{
+				$('#step1').hide();
+				$('#step2').show();
+			}
+			beginExpRound();
+		}
+		return;
+	}
+	else	
+	{
+		var userArr=new Array();
+		if(parseInt(variables['Bot_Count'])==0)
+		{
+
+			userArr.push(parseInt(participant));
+			userArr.push(val.substring(val.indexOf(">")+1,val.indexOf("</")));
+			this.prevRoundChoices[this.expRoundNum].push(userArr);
+		}
+		else
+		{
+			if(val.substring(val.indexOf("</answer>")+9).indexOf("</answer>")>=0)
+			{
+				var tarr=val.split("</answer>");
+				for(var p=0;p<tarr.length;p++)
+				{
+					if(tarr[p].length>0)
+					{
+						var curpt=parseInt(tarr[p].substring(tarr[p].indexOf("\"")+1, tarr[p].indexOf("\"", tarr[p].indexOf("\"")+1)));
+						var curdir=tarr[p].substring(tarr[p].indexOf(">")+1);
+						var chcArr=new Array();
+						chcArr.push(curpt);
+						chcArr.push(curdir);
+						this.prevRoundChoices[this.expRoundNum].push(chcArr);
+					}
+				}
+			}
+			else
+			{
+				userArr.push(parseInt(participant));
+				userArr.push(val.substring(val.indexOf(">")+1,val.indexOf("</")));
+				this.prevRoundChoices[this.expRoundNum].push(userArr);
+			}
+		}
+
+		if(this.prevRoundChoices[this.expRoundNum].length==minimumParticipants)
+		{
+			$('#earnresult').html("");
+			updateStatTables();
+			clearTimeout(this.timeoutStep2);
+			this.Step2Timer=parseInt(variables['experiment_round_timer']);
+			$('#step2').hide();
+			if(waitThisRound&&parseInt(variables["Enable Polling"])==1)
+			{
+				$('#step3').hide();
+				$('#polling').show();
+				$('#pollingtext').html("All participants made a choice. Next round is about to begin...");
+			}
+			else
+			{
+				$('#step3').show();
+				$('#polling').hide();
+				$('#pollingtext').html(preprocess(variables['Polling_Text']));
+				$('#resulttable').fixedHeaderTable({ altClass: 'odd'});
+			}
+			countDownStep3();
+		}
+	}
+  });
+}
+
+// implement playerDisconnect():
+function playerDisconnect(playerNum) {
+  // see if I have the lowest live id
+	for (var i = 1; i < myid; i++) 
+	{
+		if (activePlayers[i])
+			return;
+	}
+	iControlBots = true;
+	if($('#selectedbuttext').html().indexOf(preprocess(variables['Your_Choice_Text']))>=0)
+		submitBotAnswer();
+}
+
+function submitBotAnswer()
+{
+    for (var i = 1; i <= numPlayers; i++)
+	{
+		if (!activePlayers[i])
+		{
+			var botWaitThisRound=true;
+			for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+			{
+				if(getPlayersForRound(this.expRoundNum-1)[j]==i)
+					botWaitThisRound=false;
+			}
+			if(minimumParticipants==numPlayers+parseInt(variables['Bot_Count']))
+				this.botWaitThisRound=false;
+			if(!botWaitThisRound)
+				submitBot(i, currentRound, ("<answer subject=\""+i+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>"));
+		}
+    }
+}
+
+function botAnswer()
+{
+	if(parseInt(variables['Bot_Type'])==1||this.expRoundNum==1)
+		return variables['Button_'+(Math.floor(Math.random()*parseInt(variables['Button_Count']))+1)+'_Text'];
+	if(parseInt(variables['Bot_Type'])==2&&this.expRoundNum>1)
+		return this.prevRoundChoices[this.expRoundNum-1][Math.floor(Math.random()*this.minimumParticipants)][1];
+	return "";
+}
+
+function preprocess(str)
+{
+	for(var i=0; i<Object.keys(variables).length; i++){
+		do{
+			if(str.indexOf("%"+Object.keys(variables)[i]+"%")>=0){
+				str=str.substring(0, str.indexOf("%"+Object.keys(variables)[i]+"%"))+variables[str.substring(str.indexOf("%"+Object.keys(variables)[i]+"%")+1, str.indexOf("%"+Object.keys(variables)[i]+"%")+1+Object.keys(variables)[i].length)]+str.substring(str.indexOf("%"+Object.keys(variables)[i]+"%")+2+Object.keys(variables)[i].length);
+			}else{//assumes that it must be variables['var'][i][j]
+				if(str.indexOf("%"+Object.keys(variables)[i]+"[")>=0){
+					tempstr=str.substring(str.indexOf("%"+Object.keys(variables)[i]+"[")+1, str.indexOf("%", str.indexOf("%"+Object.keys(variables)[i]+"[")+1));				
+					str=str.substring(0, str.indexOf("%"+Object.keys(variables)[i]+"["))+eval(variables[$.trim(str.substring(str.indexOf("%"+Object.keys(variables)[i]+"[")+1, str.indexOf("[",str.indexOf("%"+Object.keys(variables)[i]+"[")+1)))])[(parseInt(tempstr.substring(tempstr.indexOf('[')+1,tempstr.indexOf(']')))-1)][(parseInt(tempstr.substring(tempstr.indexOf('[', tempstr.indexOf('[')+1)+1,tempstr.indexOf(']', tempstr.indexOf(']')+1)))-1)]+str.substring(str.indexOf("%", str.indexOf("%"+Object.keys(variables)[i]+"[")+1)+1);
+				}
+			}
+		}while((str.indexOf("%"+Object.keys(variables)[i]+"%")>=0)||(str.indexOf("%"+Object.keys(variables)[i]+"[")>=0));
+	}
+	return str;
+}
+
+function selectionSort(arr)
+{
+	for (var i=0; i<arr.length-1; i++) {
+		for (var j=i+1; j<arr.length; j++) {
+			if($.trim(variables['scoreboard_order'])=="increasing")
+			{
+				if (arr[i][1] > arr[j][1]) {
+					//... Exchange elements
+					var tempnm = arr[i][0];
+					arr[i][0] = arr[j][0];
+					arr[j][0] = tempnm;
+					
+					var tempstr = arr[i][1];
+					arr[i][1] = arr[j][1];
+					arr[j][1] = tempstr;
+				}
+			}
+			if($.trim(variables['scoreboard_order'])=="decreasing")
+			{
+				if (arr[i][1] < arr[j][1]) {
+					//... Exchange elements
+					var tempnm = arr[i][0];
+					arr[i][0] = arr[j][0];
+					arr[j][0] = tempnm;
+					
+					var tempstr = arr[i][1];
+					arr[i][1] = arr[j][1];
+					arr[j][1] = tempstr;
+				}
+			}
+		}
+	}
+	return arr;
+}
+
+function updateStatTables()
+{
+	prevRoundPayoffs = new Array();
+	for(var i=1; i<=numPlayers+parseInt(variables['Bot_Count']); i++)
+		prevRoundPayoffs[i]=parseFloat("0").toFixed(2);
+	for(var u=0; u<prevRoundChoices[this.expRoundNum].length; u++)
+	{
+		var figuredComb=new Array();
+		var userChoice;
+		for(var i=0; i<minimumParticipants; i++)
+		{
+			if(this.prevRoundChoices[this.expRoundNum][i][0]!=this.prevRoundChoices[this.expRoundNum][u][0])
+				figuredComb.push(this.prevRoundChoices[this.expRoundNum][i][1]);
+			else
+				userChoice=this.prevRoundChoices[this.expRoundNum][i][1];
+		}
+		var mcri=matchedCombRowIndex(userChoice);
+		var mcci=matchedCombColumnIndex(figuredComb, true);
+		//alert(mcri+" ve "+mcci+" ve "+userChoice+" ve "+figuredComb)
+		if(this.prevRoundChoices[this.expRoundNum][u][0]==myid)
+		{
+			for(var i=1; i<=parseInt(variables['information_row_count']); i++)
+			{
+				for(var j=1; j<=parseInt(variables['information_column_count']); j++)
+				{
+					if(variables["information_row"+i+"_column"+j+"_payoff_cells"].indexOf("("+(mcri+1)+","+(mcci+1)+")")>=0)
+					{
+						$("#resultimage").attr("src", getFile(variables["information_row"+i+"_column"+j+"_image"]));
+						$("#resulttext").html(preprocess(variables["information_row"+i+"_column"+j+"_outcome_text"]));
+						break;
+					}
+				}
+			}
+		}
+		prevRoundPayoffs[this.prevRoundChoices[this.expRoundNum][u][0]]=parseFloat(eval(variables['payoff'])[mcri][mcci]).toFixed(2);
+		totalPayoffs[this.prevRoundChoices[this.expRoundNum][u][0]]=(parseFloat(totalPayoffs[this.prevRoundChoices[this.expRoundNum][u][0]])+parseFloat(eval(variables['payoff'])[mcri][mcci])).toFixed(2);
+		averagePayoffs[this.prevRoundChoices[this.expRoundNum][u][0]]=parseFloat(parseFloat(totalPayoffs[this.prevRoundChoices[this.expRoundNum][u][0]])/(this.expRoundNum)).toFixed(2);
+	}	
+	
+	this.scores=new Array();
+	for(var i=0; i<numPlayers+parseInt(variables['Bot_Count']); i++)
+	{
+		scores[i]=new Array();
+		scores[i].push(i+1);
+		scores[i].push(parseFloat(totalPayoffs[i+1]));
+	}
+	this.scores=selectionSort(this.scores);
+	
+	$('#earnresult').html(prevRoundPayoffs[myid]);
+
+	if(this.prevRoundChoices[this.expRoundNum].length==minimumParticipants)
+	{
+		var resulttablehtml="<thead><tr style=\"height:25px; line-height:25px;\"><th><span style='padding-left:7px;'>Rank</span></th><th><span style='padding-left:7px;'>Players</span></th><th><span style='padding-left:7px;'>Prev. Round Payoff</span></th><th><span style='padding-left:7px;'>Score Board</span></th></tr></thead><tbody>";
+		for(var i=0; i<numPlayers+parseInt(variables['Bot_Count']); i++)
+		{
+			resulttablehtml+=("<tr style=\"height:25px; line-height:25px;\"><td><span style='padding-left:7px;'>"+(i+1)+"</span></td><td><span style='padding-left:7px;'>");
+			if(scores[i][0]<=numPlayers)
+			{
+				if(scores[i][0]==myid)
+				{
+					if(prevRoundPayoffs[scores[i][0]]>0)
+						resulttablehtml+=("You</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("up.png")+"\"></td></tr>");
+					else if(prevRoundPayoffs[scores[i][0]]<0)
+						resulttablehtml+=("You</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("down.png")+"\"></td></tr>");
+					else
+						resulttablehtml+=("You</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("nochange.png")+"\"></td></tr>");
+				}
+				else
+				{
+					if(prevRoundPayoffs[scores[i][0]]>0)
+						resulttablehtml+=(getName(scores[i][0])+"</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("up.png")+"\"></td></tr>");
+					else if(prevRoundPayoffs[scores[i][0]]<0)
+						resulttablehtml+=(getName(scores[i][0])+"</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("down.png")+"\"></td></tr>");
+					else
+						resulttablehtml+=(getName(scores[i][0])+"</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("nochange.png")+"\"></td></tr>");
+				}
+			}
+			else
+			{
+				if(prevRoundPayoffs[scores[i][0]]>0)
+					resulttablehtml+=(("User "+(scores[i][0]))+"</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("up.png")+"\"></td></tr>");
+				else if(prevRoundPayoffs[scores[i][0]]<0)
+					resulttablehtml+=(("User "+(scores[i][0]))+"</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("down.png")+"\"></td></tr>");
+				else
+					resulttablehtml+=(("User "+(scores[i][0]))+"</span></td><td><span style='padding-left:7px;'>"+prevRoundPayoffs[scores[i][0]]+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span><img src=\""+getFile("nochange.png")+"\"></td></tr>");
+			}
+		}
+		resulttablehtml+="</tbody>";
+		$('#resulttable').html(resulttablehtml);
+		if(this.waitForRound==false)
+			$('#resulttable').fixedHeaderTable({ altClass: 'odd'});
+	}
+}
+
+function countDownStep1(){  
+	 if (this.Step1Timer <=0){
+		if(!this.iAmReady)
+		{
+			setRound(2+this.plus30Count);
+			submit('Ready');
+		}
+	 }else{  
+		this.Step1Timer--;
+		if(parseInt(variables['instruction_lastseconds_timer'])>=this.Step1Timer)
+		{
+			$('#addtimebut').show();
+			$('#insttimer').show();
+			$('#step1secrem').html('seconds remaining');
+		}
+		else
+		{
+			$('#addtimebut').hide();
+			$('#insttimer').hide();
+			$('#step1secrem').html('&nbsp;');
+		}
+		document.getElementById("insttimer").innerHTML = this.Step1Timer;
+		this.timeoutStep1=setTimeout("countDownStep1()", 1000);
+	 }  
+}
+
+function getStaticInstructions(instpage)
+{
+	$('#insttitle').html("Instructions - Part "+instpage+"/"+Math.ceil(parseInt(variables['static_instruction_count'])/3));
+	var instructionhtml="";
+	for(var i=(instpage-1)*3+1; i<=(instpage-1)*3+3&&i<=parseInt(variables['static_instruction_count']); i++)
+	{
+		var instimg=(variables['static_instruction_image_'+i]&&variables['static_instruction_image_'+i].length>0)?variables['static_instruction_image_'+i]:"";
+		if(i%2==1){
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+				instructionhtml+="<tr><td width=\"555\" height=\"150\"><table align=\"center\" width=\"555\"><tr><td width=\"140\" height=\"150\">"+((instimg!="")?("<img src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td><td width=\"15\" height=\"150\"></td><td width=\"400\" height=\"150\" colspan=\"4\"><div id=\"instructiontextdiv\"><div style=\"word-wrap:break-word; width: 500px; height: 130px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+i+"\" class='smallinst'>"+preprocess(variables['static_instruction_text_'+i])+"</small></div></div></td></tr></table></td></tr>";
+			else
+				instructionhtml+="<tr><td width=\"555\" height=\"150\"><table align=\"center\" width=\"555\"><tr><td width=\"140\" height=\"150\">"+((instimg!="")?("<img src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td><td width=\"15\" height=\"150\"></td><td width=\"400\" height=\"150\" colspan=\"4\"><div id=\"instructiontextdiv\"><div style=\"word-wrap:break-word; width: 400px; height: 130px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+i+"\" class='smallinst'>"+preprocess(variables['static_instruction_text_'+i])+"</small></div></div></td></tr></table></td></tr>";
+		}else{
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+				instructionhtml+="<tr><td width=\"555\" height=\"150\"><table align=\"center\" width=\"555\"><tr><td width=\"400\" height=\"150\"><div id=\"instructiontextdiv\"><div style=\"word-wrap:break-word; width: 500px; height: 130px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+i+"\" class='smallinst'>"+preprocess(variables['static_instruction_text_'+i])+"</small></div></div></td><td width=\"15\" height=\"150\"></td><td width=\"140\" height=\"150\">"+((instimg!="")?("<img src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td></tr></table></td></tr>";
+			else
+				instructionhtml+="<tr><td width=\"555\" height=\"150\"><table align=\"center\" width=\"555\"><tr><td width=\"400\" height=\"150\"><div id=\"instructiontextdiv\"><div style=\"word-wrap:break-word; width: 400px; height: 130px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+i+"\" class='smallinst'>"+preprocess(variables['static_instruction_text_'+i])+"</small></div></div></td><td width=\"15\" height=\"150\"></td><td width=\"140\" height=\"150\">"+((instimg!="")?("<img src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td></tr></table></td></tr>";
+		}
+	}
+	//instructionhtml+="<tr><td width=\"555\" height=\"46\"><table align=\"center\" width=\"555\"><tr><td width=\"185\" height=\"46\"><p align=\"left\"><button id=\"previnsbut\" type=\"submit\" class=\"btn btn-primary\" onClick=\"instructionsPage--;getStaticInstructions(instructionsPage);\"><i class=\"icon-arrow-left icon-white\"></i> Previous</button></p></td><td width=\"185\" height=\"46\"><p align=\"center\"></p></td><td width=\"185\" height=\"46\"><p align=\"right\"><button id=\"nextinsbut\" type=\"submit\" class=\"btn btn-primary\" onClick=\"instructionsPage++;getStaticInstructions(instructionsPage);;\"><i class=\"icon-arrow-right icon-white\"></i>Next</button></p></td></tr></table></td></tr>";
+	instructionhtml+="<tr><td width=\"555\" height=\"46\"><table align=\"center\" width=\"555\"><tr><td width=\"185\" height=\"46\"><p align=\"left\"><button id=\"previnsbut\" type=\"submit\" class=\"btn-largemp\" onClick=\"instructionsPage--;getStaticInstructions(instructionsPage);\"><i class=\"icon-arrow-left icon-white\"></i> Previous</button></p></td><td width=\"185\" height=\"46\"><p align=\"center\"><font face=\"Verdana\"><span style=\"font-size:10pt; color:black\" id=\"readyp\"><button id=\"begininsbut\" type=\"submit\" class=\"btn-largemp\" onClick=\"setRound(2+getPlus30Count());submit('Ready');$('#begininsbut').hide();$('#readyp').html('Please wait for others...');$('#addtimebut').hide();readySignal();$('#insttitle').html('');\">I'm Ready</button></span></font></p></td><td width=\"185\" height=\"46\"><p align=\"right\"><button id=\"nextinsbut\" type=\"submit\" class=\"btn-largemp\" onClick=\"instructionsPage++;getStaticInstructions(instructionsPage);\"><i class=\"icon-arrow-right icon-white\"></i>Next</button></p></td></tr></table></td></tr>";
+	$("#instructiontable").html(instructionhtml);
+	if(instpage==Math.ceil(parseInt(variables['static_instruction_count'])/3))
+	{
+		$('#nextinsbut').hide();
+		if(!this.iAmReady)
+			$('#begininsbut').show();
+		else
+		{
+			$('#begininsbut').hide();
+			$('#readyp').html('Please wait for others...');
+		}
+	}
+	else
+	{
+		try{
+			if (awards[myid]["instructions"]["count"] > 0)
+				$('#begininsbut').show();
+			else
+				$('#begininsbut').hide();
+		} catch(err) {$('#begininsbut').hide();}
+	}
+	if(instpage>1)
+		$('#previnsbut').show();
+	else
+		$('#previnsbut').hide();
+}
+
+function getDynamicInstructions(instpage)
+{
+	$('#insttitle').html("Instructions - "+instpage+"/"+variables["dynamic_instruction_count"]);
+	var instructionhtml="";
+	
+	var instimg=(variables['dynamic_instruction_image_'+instpage]&&variables['dynamic_instruction_image_'+instpage].length>0)?variables['dynamic_instruction_image_'+instpage]:"";
+	if(instpage%2==1){
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			instructionhtml+="<tr><td width=\"555\"><table align=\"center\" width=\"555\"><tr><td width=\"140\">"+((instimg!="")?("<img id=\"infoimg\" src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td><td width=\"15\"></td><td width=\"400\" colspan=\"4\"><div id=\"instructiontextdiv\"><div id=\"instructiontextdivdets\" style=\"word-wrap:break-word; width: 480px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+instpage+"\" class='smalldyninst'>"+preprocess(variables['dynamic_instruction_text_'+instpage])+"</small></div></div></td></tr></table></td></tr>";
+		else
+			instructionhtml+="<tr><td width=\"555\"><table align=\"center\" width=\"555\"><tr><td width=\"140\">"+((instimg!="")?("<img id=\"infoimg\" src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td><td width=\"15\"></td><td width=\"400\" colspan=\"4\"><div id=\"instructiontextdiv\"><div id=\"instructiontextdivdets\" style=\"word-wrap:break-word; width: 380px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+instpage+"\" class='smalldyninst'>"+preprocess(variables['dynamic_instruction_text_'+instpage])+"</small></div></div></td></tr></table></td></tr>";
+	}else{
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			instructionhtml+="<tr><td width=\"555\"><table align=\"center\" width=\"555\"><tr><td width=\"400\"><div id=\"instructiontextdiv\"><div id=\"instructiontextdivdets\" style=\"word-wrap:break-word; width: 480px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+instpage+"\" class='smalldyninst'>"+preprocess(variables['dynamic_instruction_text_'+instpage])+"</small></div></div></td><td width=\"15\"></td><td width=\"140\">"+((instimg!="")?("<img id=\"infoimg\" src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td></tr></table></td></tr>";
+		else
+			instructionhtml+="<tr><td width=\"555\"><table align=\"center\" width=\"555\"><tr><td width=\"400\"><div id=\"instructiontextdiv\"><div id=\"instructiontextdivdets\" style=\"word-wrap:break-word; width: 380px; margin-left:7.5px; margin-right:7.5px; margin-top:5px; margin-bottom:5px;\"><small id=\"instructiontext"+instpage+"\" class='smalldyninst'>"+preprocess(variables['dynamic_instruction_text_'+instpage])+"</small></div></div></td><td width=\"15\"></td><td width=\"140\">"+((instimg!="")?("<img id=\"infoimg\" src=\""+getFile(instimg)+"\" class=\"img-inst\">"):"")+"</td></tr></table></td></tr>";
+	}
+	if(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].length>0)
+	{
+		for(var i=1; i<=parseInt(variables['information_row_count']); i++)
+		{
+			for(var j=1; j<=parseInt(variables['information_column_count']); j++)
+			{
+				if(variables['information_row'+i+'_column'+j+'_payoff_cells'].indexOf(variables['dynamic_instruction_text_'+instpage+'_payoff_cell'])>=0)
+				{
+					var infohtml="";
+					infohtml+="<tr>";
+					var infimg=(variables['information_row'+i+'_column'+j+'_image']&&variables['information_row'+i+'_column'+j+'_image'].length>0)?variables['information_row'+i+'_column'+j+'_image']:"nophoto.png";
+					infohtml+="<td width=\"352\" colspan=\"3\"><div style=\"width:100px; height:100px; margin-left:126px;\"><img class=\"infoimg\" id=\"infoimage"+j+"\" src=\""+getFile(infimg)+"\"><div></td>";
+					infohtml+="</tr><tr><td width=\"352\" height=\"6\" colspan=\"3\"></td></tr><tr>";
+					infohtml+="<td width=\"18\" id=\"infotexttdmargin\"></td><td width=\"302\"><div id=\"infotextdiv\"><small id=\"infotext"+j+"\" class='smallinfo'>"+((variables['information_row'+i+'_column'+j+'_text'])?preprocess(variables['information_row'+i+'_column'+j+'_text']):"")+"</small></div></td><td width=\"18\" id=\"infotexttdmargin\" ></td>";
+					infohtml+="</tr>";
+					$("#infotable").html(infohtml);
+				}
+			}
+		}
+		instructionhtml=(instructionhtml+"<tr><td><table style=\"margin-left: auto;margin-right: auto;\">"+$("#infotable").html()+"</table></td></tr><tr><td width=\"794\" height=\"80\"><div id=\"butholder\" style=\"height: 80px;\"><div style=\"text-align: center; height: 30px; line-height:30px;\"><font face=\"Verdana\" ><span style=\"font-size:12pt; color: #0e76bc;\" id=\"selectedbuttext\"></span></font></div><table id=\"buts\" border=\"0\" align=\"center\" width=\"794\"></table></div></td></tr>");
+	}
+		
+	instructionhtml+="<tr><td width=\"555\" height=\"46\"><table align=\"center\" width=\"555\"><tr><td width=\"185\" height=\"46\"><p align=\"left\"><button id=\"previnsbut\" type=\"submit\" class=\"btn-largemp\" onClick=\"instructionsPage--;getDynamicInstructions(instructionsPage);\"><i class=\"icon-arrow-left icon-white\"></i> Previous</button></p></td><td width=\"185\" height=\"46\"><p align=\"center\"><font face=\"Verdana\"><span style=\"font-size:10pt; color:black\" id=\"readyp\"><button id=\"begininsbut\" type=\"submit\" class=\"btn-largemp\" onClick=\"setRound(2+getPlus30Count());submit('Ready');$('#begininsbut').hide();$('#readyp').html('Please wait for others...');$('#addtimebut').hide();readySignal();$('#instructiontable').html('');$('#insttitle').html('');\">I'm Ready</button></span></font></p></td><td width=\"185\" height=\"46\"><p align=\"right\"><button id=\"nextinsbut\" type=\"submit\" class=\"btn-largemp\" onClick=\"instructionsPage++;getDynamicInstructions(instructionsPage);\"><i class=\"icon-arrow-right icon-white\"></i>Next</button></p></td></tr></table></td></tr>";
+	$("#instructiontable").html(instructionhtml);
+	
+	if(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].length==0)
+		$("#instructiontextdivdets").css( { height : "130px" } );
+	else
+	{
+		var butshtml="<tr><td width=\"20\"></td><td width=\"140\"><div id=\"but1\" style=\"width: 140px; height: 70px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but2\" style=\"width: 140px; height: 70px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but3\" style=\"width: 140px; height: 70px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but4\" style=\"width: 140px; height: 70px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but5\" style=\"width: 140px; height: 70px; position:relative;\"></div></td><td width=\"20\"></td></tr>";
+		$("#buts").html(butshtml);
+		$('#selectedbuttext').html("&nbsp;");
+		if(parseInt(variables['Button_Count'])==2)
+		{
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==1)?$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut2_2Pressed("+instpage+");$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>"):$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");	
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==2)?($("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut4_2Pressed("+instpage+");$('#but2').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>")):$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");
+		}
+		else if(parseInt(variables['Button_Count'])==3)
+		{
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==1)?$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut2_3Pressed("+instpage+");$('#but3').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>"):$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");		
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==2)?$("#but3").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut3_3Pressed("+instpage+");$('#but2').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>"):$("#but3").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");		
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==3)?$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut4_3Pressed("+instpage+");$('#but2').html('');$('#but3').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>"):$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>");
+		}
+		else if(parseInt(variables['Button_Count'])==4)
+		{
+			$("#buts").html("<tr><td width=\"24\"></td><td width=\"170\"><div id=\"but1\" style=\"width: 170px; height: 70px; position:relative;\"></div></td><td width=\"24\"></td><td width=\"170\"><div id=\"but2\" style=\"width: 170px; height: 70px; position:relative;\"></div></td><td width=\"24\"></td><td width=\"170\"><div id=\"but4\" style=\"width: 170px; height: 70px; position:relative;\"></div></td><td width=\"24\"></td><td width=\"170\"><div id=\"but5\" style=\"width: 170px; height: 70px; position:relative;\"></div></td><td width=\"24\"></td></tr>");
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==1)?$("#but1").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut1_4Pressed("+instpage+");$('#but2').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>"):$("#but1").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==2)?$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut2_4Pressed("+instpage+");$('#but1').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>"):$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==3)?$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut4_4Pressed("+instpage+");$('#but1').html('');$('#but2').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>"):$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>");		
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==4)?$("#but5").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut5_4Pressed("+instpage+");$('#but1').html('');$('#but2').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_4_Text'])+"</a></p>"):$("#but5").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_4_Text'])+"</a></p>");	
+		}
+		else if(parseInt(variables['Button_Count'])==5)
+		{
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==1)?$("#but1").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut1_5Pressed("+instpage+");$('#but2').html('');$('#but3').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>"):$("#but1").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==2)?$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut2_5Pressed("+instpage+");$('#but1').html('');$('#but3').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>"):$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==3)?$("#but3").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut3_5Pressed("+instpage+");$('#but1').html('');$('#but2').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>"):$("#but3").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>");
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==4)?$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut4_5Pressed("+instpage+");$('#but1').html('');$('#but2').html('');$('#but3').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_4_Text'])+"</a></p>"):$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_4_Text'])+"</a></p>");
+			(parseInt(variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2))==5)?$("#but5").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introBut5_5Pressed("+instpage+");$('#but1').html('');$('#but2').html('');$('#but3').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_5_Text'])+"</a></p>"):$("#but5").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"introWarning("+instpage+");\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_5_Text'])+"</a></p>");
+		}
+	}
+	
+	$("#instructiontextdiv").css( { width : "0px" } );
+	$( "#infoimg" ).hide().fadeIn(700);
+	if(instpage%2==1)
+	{
+		$("#instructiontextdiv").css( { marginLeft : "500px" } );
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			$("#instructiontextdiv").animate({width: "500px", marginLeft: 0}, 500);
+		else
+			$("#instructiontextdiv").animate({width: "400px", marginLeft: 0}, 500);
+	}
+	else{
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			$("#instructiontextdiv").animate({width: "500px"}, 500);
+		else
+			$("#instructiontextdiv").animate({width: "400px"}, 500);
+	}
+		
+	if(instpage==parseInt(variables["dynamic_instruction_count"]))
+	{
+		$('#nextinsbut').hide();
+		if(!this.iAmReady)
+			$('#begininsbut').show();
+		else
+		{
+			$('#begininsbut').hide();
+			$('#readyp').html('Please wait for others...');
+		}
+	}
+	else
+	{
+		try{
+			if (awards[myid]["instructions"]["count"] > 0)
+				$('#begininsbut').show();
+			else
+				$('#begininsbut').hide();
+		} catch(err) {$('#begininsbut').hide();}
+	}
+	if(instpage>1)
+		$('#previnsbut').show();
+	else
+		$('#previnsbut').hide();
+}
+
+function introWarning(instpage)
+{
+	$('#selectedbuttext').html("Please press on "+preprocess(variables['Button_'+variables["dynamic_instruction_text_"+instpage+"_payoff_cell"].substring(1,2)+'_Text'])+"!");
+	$('#selectedbuttext').css("color", "red");
+}
+
+function introOutcome(instpage)
+{
+	setTimeout( function(){ 
+		for(var t=0; t<parseInt(variables['information_row_count']); t++)
+		{
+			for(var y=0; y<parseInt(variables['information_column_count']); y++)
+			{	
+				if(variables['information_row'+(t+1)+'_column'+(y+1)+'_payoff_cells'].indexOf(variables['dynamic_instruction_text_'+instpage+'_payoff_cell'])>=0)
+				{
+					$("#instructiontext"+instpage).html(preprocess(variables['information_row'+(t+1)+'_column'+(y+1)+'_outcome_text']));
+					break;
+				}
+			}
+		}
+		$("#instructiontextdiv").css("background-color", "#f7941e");
+		$("#instructiontextdiv").css("borderColor", "#f7941e");
+		$("#instructiontextdiv").css("color", "#404041");
+		$("#instructiontextdiv").css( { width : "0px" } );
+		if(instpage%2==1)
+		{
+			$("#instructiontextdiv").css( { marginLeft : "400px" } );
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+				$("#instructiontextdiv").animate({width: "500px", marginLeft: 0}, 500);
+				$("#instructiontextdiv").css( { height : "100px" } );
+			}
+			else
+				$("#instructiontextdiv").animate({width: "400px", marginLeft: 0}, 500);
+		}
+		else{
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+				$("#instructiontextdiv").animate({width: "500px"}, 500);
+				$("#instructiontextdiv").css( { height : "100px" } );
+			}
+			else
+				$("#instructiontextdiv").animate({width: "400px"}, 500);
+		}
+	  }
+	 , 1000 );
+}
+
+function introBut2_2Pressed(instpage)
+{
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'125px'});
+	else
+		$("#but2").animate({left:'155px'});
+	introOutcome(instpage);
+}
+
+function introBut4_2Pressed(instpage)
+{
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'185px'});
+	else
+		$("#but4").animate({right:'155px'});
+	introOutcome(instpage);
+}
+
+function introBut2_3Pressed(instpage)
+{
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'125px'});
+	else
+		$("#but2").animate({left:'155px'});
+	introOutcome(instpage);
+}
+
+function introBut3_3Pressed(instpage)
+{
+	$('#but3').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	introOutcome(instpage);
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'185px'});
+		
+}
+
+function introBut4_3Pressed(instpage)
+{
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_3_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_3_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'185px'});
+	else
+		$("#but4").animate({right:'155px'});
+	introOutcome(instpage);
+}
+
+function introBut1_4Pressed(instpage)
+{
+	$('#but1').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text']+"</a></p>"));
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	$("#but1").animate({left:'282px'});
+	introOutcome(instpage);
+}
+
+function introBut2_4Pressed(instpage)
+{
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'75px'});
+	else
+		$("#but2").animate({left:'95px'});
+	introOutcome(instpage);
+}
+
+function introBut4_4Pressed(instpage)
+{
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_3_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_3_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'115px'});
+	else
+		$("#but4").animate({right:'95px'});
+	introOutcome(instpage);
+}
+
+function introBut5_4Pressed(instpage)
+{
+	$('#but5').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_4_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_4_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	$("#but5").animate({right:'282px'});
+	introOutcome(instpage);
+}
+
+function introBut1_5Pressed(instpage)
+{
+	$('#but1').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but1").animate({left:'280px'});
+	else
+		$("#but1").animate({left:'310px'});
+	introOutcome(instpage);
+}
+
+function introBut2_5Pressed(instpage)
+{
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'135px'});
+	else
+		$("#but2").animate({left:'155px'});
+	introOutcome(instpage);
+}
+
+function introBut3_5Pressed(instpage)
+{
+	$('#but3').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_3_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_3_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	introOutcome(instpage);
+}
+
+function introBut4_5Pressed(instpage)
+{
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_4_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_4_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'175px'});
+	else
+		$("#but4").animate({right:'155px'});
+	introOutcome(instpage);
+}
+
+function introBut5_5Pressed(instpage)
+{
+	$('#but5').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_5_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_5_Text']));
+	$('#selectedbuttext').css("color", "#0e76bc");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but5").animate({right:'340px'});
+	else
+		$("#but5").animate({right:'310px'});
+	introOutcome(instpage);
+}
+
+function readySignal()
+{
+	this.iAmReady=true;
+}
+
+function countDownStep2()
+{  
+	 if (this.Step2Timer <=0){
+		clearTimeout(this.timeoutStep2);
+	 	this.Step2Timer=parseInt(variables['experiment_round_timer']);
+		if(iControlBots)
+			submitBotAnswer();
+		if((parseInt(variables['Enable Polling'])==1&&this.waitThisRound==false)||(parseInt(variables['Enable Polling'])==1&&numPlayers==minimumParticipants)||(parseInt(variables['Enable Polling'])==0))
+		{
+			if($('#selectedbuttext').html()=="&nbsp;") // in case of incomplete participation send the prespecified choice.
+			{
+				var incompChoiceButNum=-1;
+				if($.trim(variables["Button_1_Text"])==$.trim(variables["inactive_choice"]))
+					incompChoiceButNum=1;
+				if($.trim(variables["Button_2_Text"])==$.trim(variables["inactive_choice"]))
+					incompChoiceButNum=2;
+				if($.trim(variables["Button_3_Text"])==$.trim(variables["inactive_choice"]))
+					incompChoiceButNum=3;
+				if($.trim(variables["Button_4_Text"])==$.trim(variables["inactive_choice"]))
+					incompChoiceButNum=4;
+				if($.trim(variables["Button_5_Text"])==$.trim(variables["inactive_choice"]))
+					incompChoiceButNum=5;
+					
+				if(parseInt(variables['Button_Count'])==2)
+				{
+					if(incompChoiceButNum==1)
+					{
+						but2_2Pressed();
+						$('#but4').html('');
+					}
+					if(incompChoiceButNum==2)
+					{
+						but4_2Pressed();
+						$('#but2').html('');
+					}
+				}
+				if(parseInt(variables['Button_Count'])==3)
+				{
+					if(incompChoiceButNum==1)
+					{
+						but2_3Pressed();
+						$('#but3').html('');
+						$('#but4').html('');
+					}
+					if(incompChoiceButNum==2)
+					{
+						but3_3Pressed();
+						$('#but2').html('');
+						$('#but4').html('');
+					}
+					if(incompChoiceButNum==3)
+					{
+						but4_3Pressed();
+						$('#but2').html('');
+						$('#but3').html('');
+					}
+				}
+				if(parseInt(variables['Button_Count'])==4)
+				{
+					if(incompChoiceButNum==1)
+					{
+						but1_4Pressed();
+						$('#but2').html('');
+						$('#but4').html('');
+						$('#but5').html('');
+					}
+					if(incompChoiceButNum==2)
+					{
+						but2_4Pressed();
+						$('#but1').html('');
+						$('#but4').html('');
+						$('#but5').html('');
+					}
+					if(incompChoiceButNum==3)
+					{
+						but4_4Pressed();
+						$('#but1').html('');
+						$('#but2').html('');
+						$('#but5').html('');
+					}
+					if(incompChoiceButNum==4)
+					{
+						but5_4Pressed();
+						$('#but1').html('');
+						$('#but2').html('');
+						$('#but4').html('');
+					}
+				}
+				if(parseInt(variables['Button_Count'])==5)
+				{
+					if(incompChoiceButNum==1)
+					{
+						but1_5Pressed();
+						$('#but2').html('');
+						$('#but3').html('');
+						$('#but4').html('');
+						$('#but5').html('');
+					}
+					if(incompChoiceButNum==2)
+					{
+						but2_5Pressed();
+						$('#but1').html('');
+						$('#but3').html('');
+						$('#but4').html('');
+						$('#but5').html('');
+					}
+					if(incompChoiceButNum==3)
+					{
+						but3_5Pressed();
+						$('#but1').html('');
+						$('#but2').html('');
+						$('#but4').html('');
+						$('#but5').html('');
+					}
+					if(incompChoiceButNum==4)
+					{
+						but4_5Pressed();
+						$('#but1').html('');
+						$('#but2').html('');
+						$('#but3').html('');
+						$('#but5').html('');
+					}
+					if(incompChoiceButNum==5)
+					{
+						but5_5Pressed();
+						$('#but1').html('');
+						$('#but2').html('');
+						$('#but3').html('');
+						$('#but4').html('');
+					}
+				}
+			}
+			$('#step2').hide();
+			$('#step3').show();
+		}
+	 }else{  
+		this.Step2Timer--;
+		document.getElementById("pollingtimertext").innerHTML = (this.Step2Timer);
+		var min=Math.floor(this.Step2Timer/60);
+		var sec=this.Step2Timer%60;
+		if(min>1)
+		{
+			if(sec>1)
+				this.step2TimeRemText.attr({text: min+" minutes "+sec+" seconds"});
+			else if(sec==1)
+				this.step2TimeRemText.attr({text: min+" minutes "+sec+" second"});
+			else
+				this.step2TimeRemText.attr({text: min+" minutes"});
+		}
+		else if(min==1)
+		{
+			if(sec>1)
+				this.step2TimeRemText.attr({text: min+" minute "+sec+" seconds"});
+			else if(sec==1)
+				this.step2TimeRemText.attr({text: min+" minute "+sec+" second"});
+			else
+				this.step2TimeRemText.attr({text: min+" minute"});
+		}
+		else
+		{
+			if(sec>1)
+				this.step2TimeRemText.attr({text: sec+" seconds"});
+			else
+				this.step2TimeRemText.attr({text: sec+" second"});
+		}	
+		this.timeoutStep2=setTimeout("countDownStep2()", 1000);
+	 }  
+}
+
+function recursivepayoffcaption(begin, end, k)
+{
+	for (var s = 1; s <= k; s++) 
+	{
+		if (begin == end) 
+		{
+			var tempord=new Array();
+			for(var j=0; j<this.payoffcaption.length; j++)
+				tempord.push(this.payoffcaption[j]);
+			this.availableChoicesComb.push(tempord);
+			return;
+		}
+		else
+			this.payoffcaption[begin]=preprocess(variables['Button_'+s+'_Text']);
+		recursivepayoffcaption(begin+1, end, k);
+	}
+	
+	return;
+}
+
+function matchedCombRowIndex(playerChoice)
+{
+	if(playerChoice==preprocess(variables['Button_1_Text']))
+		return 0;
+	if(playerChoice==preprocess(variables['Button_2_Text']))
+		return 1;
+	if(playerChoice==preprocess(variables['Button_3_Text']))
+		return 2;
+	if(playerChoice==preprocess(variables['Button_4_Text']))
+		return 3;
+	if(playerChoice==preprocess(variables['Button_1_Text']))
+		return 4;
+		
+	return -1
+}
+
+function matchedCombColumnIndex(arr, ratiovalid)
+{
+	for(var y=0; y<this.availableChoicesComb.length; y++)
+	{
+		var bl=true;
+		for(var z=0; z<minimumParticipants-1; z++)
+		{
+			if(arr[z]!=this.availableChoicesComb[y][z])
+				bl = false;
+		}
+		if(bl)
+			return y;
+	}
+	return -1;
+}
+
+function countDownStep3(){  
+	 if (this.Step3Timer <=0){
+		clearTimeout(this.timeoutStep3);
+		if(this.expRoundNum<parseInt(variables['total_rounds_count']))
+		{
+			this.Step3Timer=parseInt(variables['result_timer']);
+			this.expRoundNum++;
+			setRound(2+this.expRoundNum+this.plus30Count);
+			if(parseInt(variables['Enable Polling'])==1)
+			{
+				this.waitThisRound=true;
+				for(var i=0; i<getPlayersForRound(this.expRoundNum-1).length; i++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[i]==myid)
+						this.waitThisRound=false;
+				}
+				if(minimumParticipants==numPlayers+parseInt(variables['Bot_Count']))
+					this.waitThisRound=false;
+				$('#pollingtext').html(preprocess(variables['Polling_Text']));
+				if(this.waitThisRound)
+				{
+					$('#step3').hide();
+					$('#polling').show();
+				}
+				else
+				{
+					$('#step3').hide();
+					$('#polling').hide();
+					$('#step2').show();
+				}
+			}
+			else
+			{
+				$('#step3').hide();
+				$('#polling').hide();
+				$('#step2').show();
+			}
+			beginExpRound();
+		}
+		else
+		{
+			$('#step3').hide();
+			$('#polling').hide();
+			$('#step4').show();
+			var finalresulttablehtml="<thead><tr style=\"height:25px; line-height:25px;\"><th><span style='padding-left:7px;'>Rank</span></th><th><span style='padding-left:7px;'>Players</span></th><th><span style='padding-left:7px;'>Score Board</span></th></tr></thead><tbody>";
+			for(var i=0; i<numPlayers+parseInt(variables['Bot_Count']); i++)
+			{
+				finalresulttablehtml+="<tr style=\"height:25px; line-height:25px;\"><td><span style='padding-left:7px;'>"+(i+1)+"</span></td><td><span style='padding-left:7px;'>";
+				if(scores[i][0]<=numPlayers)
+				{
+					if(scores[i][0]==myid)
+					{
+						if((i+1)==1)
+							writeAward("Experiment Winner");
+						writeScore(variables['Total_Payoff_Text'],scores[i][1]);
+						finalresulttablehtml+="You</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span></td></tr>";
+					}
+					else
+						finalresulttablehtml+=getName(scores[i][0])+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span></td></tr>";
+				}
+				else
+					finalresulttablehtml+=("User "+(scores[i][0]))+"</span></td><td><span style='padding-left:7px;'>"+scores[i][1].toFixed(2)+"</span></td></tr>";
+			}
+			finalresulttablehtml+="</tbody>";
+			$('#finalresulttable').html(finalresulttablehtml);
+			$('#finalresulttable').fixedHeaderTable({ altClass: 'odd'});
+			experimentComplete();
+			$('#submit_feedback_btn').click(function() { showFeedbackForm(); });
+			enablePlayAgain();
+			countDownStep4();
+		}
+	 }else{  
+		this.Step3Timer--;
+		document.getElementById("pollingtimertext").innerHTML = this.Step3Timer;
+		document.getElementById("resulttimertext").innerHTML = this.Step3Timer;
+		this.timeoutStep3=setTimeout("countDownStep3()", 1000);
+	 }  
+}
+
+function countDownStep4(){  
+	 if (this.Step4Timer <=0){
+		clearTimeout(this.timeoutStep4);
+		quit();
+		var myurl = "http://"+window.location.host+"/stop_test";
+		window.location = myurl;
+	 }else{  
+		if(!$('#feedback').is(":visible"))
+		{
+			this.Step4Timer--;
+			document.getElementById("finalresulttext").innerHTML = this.Step4Timer; 
+		}
+		this.timeoutStep4=setTimeout("countDownStep4()", 1000);
+	 }  
+}
+
+function placeArrowButtons()
+{
+	this.arrowButs = new Array();
+	var circleRight = new Object();
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		circleRight=this.paper.circle(746, 106, 32);
+	else
+		circleRight=this.paper.circle(746, 96, 16);
+	circleRight.attr("fill", "#0e76bc");
+	circleRight.attr("stroke-width", 1);
+	this.arrowButs.push(circleRight);
+	var rightArr;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		rightArr = this.paper.image(getFile('arrow.png'), 731, 90, 32, 32);
+	else
+		rightArr = this.paper.image(getFile('arrow.png'), 738.5, 87.5, 16, 16);
+	this.arrowButs.push(rightArr);
+	var hiddenCircRight = new Object();
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		hiddenCircRight=this.paper.circle(746, 106, 32);
+	else
+		hiddenCircRight=this.paper.circle(746, 96, 16);
+	hiddenCircRight.attr({opacity: 0});
+	hiddenCircRight.attr("fill", "red");
+	hiddenCircRight.attr("cursor", "pointer");
+	hiddenCircRight.hover(function(){circleRight.attr("fill", "#6198BC");}, function(){circleRight.attr({fill: "#0e76bc"});});
+	var rightClickHandler = function(){
+		var otherVisibleCount;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			otherVisibleCount=2;
+		else
+			otherVisibleCount=4; 
+		if((startRank+otherVisibleCount)<(numPlayers+parseInt(variables['Bot_Count'])))
+		{
+/*			statsContainerArr[startRank-1].translate(-130, 0);
+			statsContainerArr[startRank-1].hide();
+			for(var j=startRank; j<numPlayers+parseInt(variables['Bot_Count']); j++)
+			{
+				statsContainerArr[j].translate(-130, 0);
+				if(j==startRank+4)
+					statsContainerArr[j].show();
+			}
+			startRank++;*/
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+				for(var j=0; j<=(numPlayers+parseInt(variables['Bot_Count']))-1; j++)
+					statsContainerArr[j].translate(-170, 0);
+			}else{
+				for(var j=0; j<=(numPlayers+parseInt(variables['Bot_Count']))-1; j++)
+					statsContainerArr[j].translate(-130, 0);
+			}
+			statsContainerArr[startRank-1].hide();
+			startRank++;
+			statsContainerArr[startRank+otherVisibleCount-1].show();
+			
+			if((startRank+otherVisibleCount)==(numPlayers+parseInt(variables['Bot_Count'])))
+			{
+				circleRight.attr({opacity: 0});
+				rightArr.attr({opacity: 0});
+				hiddenCircRight.unclick(rightClickHandler);
+				hiddenCircRight.attr("cursor", "auto");
+			}
+			if(startRank==2)
+			{
+				circleLeft.attr({opacity: 100});
+				leftArr.attr({opacity: 100});
+				hiddenCircLeft.click(leftClickHandler);
+				hiddenCircLeft.attr("cursor", "pointer");
+			}
+		}
+	}
+	hiddenCircRight.click(rightClickHandler);
+	this.arrowButs.push(hiddenCircRight);
+	
+	var circleLeft = new Object();
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		circleLeft=this.paper.circle(665, 106, 32);
+	else
+		circleLeft=this.paper.circle(701, 96, 16); 
+	circleLeft.attr("fill", "#0e76bc");
+	circleLeft.attr("stroke-width", 1);
+	this.arrowButs.push(circleLeft);
+	var leftArr;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		leftArr = this.paper.image(getFile('arrow.png'), 650, 90, 32, 32);
+	else
+		leftArr = this.paper.image(getFile('arrow.png'), 693.5, 87.5, 16, 16); 
+	leftArr.transform("S-1,1");
+	this.arrowButs.push(leftArr);
+	var hiddenCircLeft = new Object();
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		hiddenCircLeft=this.paper.circle(665, 106, 32);
+	else
+		hiddenCircLeft=this.paper.circle(701, 96, 16);
+	hiddenCircLeft.attr({opacity: 0});
+	hiddenCircLeft.attr("fill", "red");
+	hiddenCircLeft.attr("cursor", "pointer");
+	hiddenCircLeft.hover(function(){circleLeft.attr("fill", "#6198BC");}, function(){circleLeft.attr({fill: "#0e76bc"});});
+	var leftClickHandler = function(){
+		var otherVisibleCount;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			otherVisibleCount=2;
+		else
+			otherVisibleCount=4;
+		if(startRank>1)
+		{
+		/*	for(var j=startRank+4-1; j<=(numPlayers+parseInt(variables['Bot_Count']))-1; j++) // BURADAYDIN statsler kayiyor!!!
+				statsContainerArr[j].translate(130, 0);
+			statsContainerArr[startRank+4-1].hide();
+			for(var j=startRank+4-2; j>=0; j--)
+				statsContainerArr[j].translate(130, 0);*/
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+				for(var j=0; j<=(numPlayers+parseInt(variables['Bot_Count']))-1; j++)
+					statsContainerArr[j].translate(170, 0);
+			}else{
+				for(var j=0; j<=(numPlayers+parseInt(variables['Bot_Count']))-1; j++)
+					statsContainerArr[j].translate(130, 0);
+			}
+			statsContainerArr[startRank+otherVisibleCount-1].hide();
+			startRank--;
+			statsContainerArr[startRank-1].show();
+			if(startRank==1)
+			{
+				circleLeft.attr({opacity: 0});
+				leftArr.attr({opacity: 0});
+				hiddenCircLeft.unclick(leftClickHandler);
+				hiddenCircLeft.attr("cursor", "auto");
+			}
+			if(startRank+otherVisibleCount==(numPlayers+parseInt(variables['Bot_Count']))-1)
+			{
+				circleRight.attr({opacity: 100});
+				rightArr.attr({opacity: 100});
+				hiddenCircRight.click(rightClickHandler);
+				hiddenCircRight.attr("cursor", "pointer");
+			}
+		}
+	}
+	circleLeft.attr({opacity: 0});
+	leftArr.attr({opacity: 0});
+	hiddenCircLeft.unclick(leftClickHandler);
+	hiddenCircLeft.attr("cursor", "auto");
+	this.arrowButs.push(hiddenCircLeft);
+}
+
+function fillStatsContainer()
+{
+	if(this.statsContainerArr==undefined)
+		this.statsContainerArr = new Array();
+	for(var i=0; i<this.statsContainerArr.length; i++)
+		for(var j=0; j<this.statsContainerArr[i].length; j++)
+			if(this.statsContainerArr[i][j])
+				this.statsContainerArr[i][j].remove();
+	for(var i=0; i<numPlayers+parseInt(variables['Bot_Count']); i++)
+	{
+		if(this.scores==undefined) // first round
+			this.statsContainerArr[i]=participantStatTable(i+1,i+1);
+		else
+			this.statsContainerArr[i]=participantStatTable(i+1,this.scores[i][0]);
+		this.statsContainerArr[i].hide();
+	}
+	for(var i=0; i<numPlayers+parseInt(variables['Bot_Count']); i++)
+	{
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(i<3)
+				this.statsContainerArr[i].show();
+			else
+			{
+				this.startRank=1;
+				if(!waitThisRound&&parseInt(variables["Enable Polling"])==1)
+					placeArrowButtons();
+				break;
+			}	
+		}else{
+			if(i<5)
+				this.statsContainerArr[i].show();
+			else
+			{
+				this.startRank=1;
+				if(!waitThisRound&&parseInt(variables["Enable Polling"])==1)
+					placeArrowButtons();
+				break;
+			}
+		}
+	}
+}
+
+function participantStatTable(rank, playerId)
+{
+	var locX;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		locX=(rank>1)?(rank-1)*170+5:5;
+	else
+		locX=(rank>1)?(rank-1)*130+5:5;
+	var tabContents = paper.set();
+	var rect;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+		rect = paper.rect(locX, 5, 165, 130, 5).attr({ 
+			"fill": "0.0-#FDBE85:5-#FDBE85:125",
+			"opacity": 0.3,
+			"stroke-opacity": 0
+		});
+	}else{
+		rect = paper.rect(locX, 5, 125, 120, 5).attr({ 
+			"fill": "0.0-#FDBE85:5-#FDBE85:125",
+			"opacity": 0.3,
+			"stroke-opacity": 0
+		});
+	}
+	//rect.glow();
+	//rect.glow({color: "#FFF", width: 100});
+	tabContents.push(rect);
+
+	if(rank==1)
+	{
+		var starImg3;
+		var starImg2;
+		var starImg1;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			starImg3 = this.paper.image(getFile('star.png'), locX+145, 7, 13, 13.5);
+			starImg2 = this.paper.image(getFile('star.png'), locX+129, 7, 13, 13.5);
+			starImg1 = this.paper.image(getFile('star.png'), locX+113, 7, 13, 13.5);
+		}else{
+			starImg3 = this.paper.image(getFile('star.png'), locX+110, 7, 13, 13.5); 
+			starImg2 = this.paper.image(getFile('star.png'), locX+94, 7, 13, 13.5); 
+			starImg1 = this.paper.image(getFile('star.png'), locX+78, 7, 13, 13.5);	
+		}
+		tabContents.push(starImg3);
+		tabContents.push(starImg2);
+		tabContents.push(starImg1);
+		if(this.expRoundNum==2&&playerId==myid)
+			writeAward("First Round Winner");
+	}
+	if(rank==2)
+	{
+		var starImg2;
+		var starImg1;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			starImg2 = this.paper.image(getFile('star.png'), locX+137, 7, 13, 13.5);
+			starImg1 = this.paper.image(getFile('star.png'), locX+121, 7, 13, 13.5);
+		}else{
+			starImg2 = this.paper.image(getFile('star.png'), locX+102, 7, 13, 13.5); 
+			starImg1 = this.paper.image(getFile('star.png'), locX+86, 7, 13, 13.5);	
+		}
+		tabContents.push(starImg2);
+		tabContents.push(starImg1);
+	}
+	if(rank==3)
+	{
+		var starImg1;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			starImg1 = this.paper.image(getFile('star.png'), locX+129, 7, 13, 13.5);
+		else
+			starImg1 = this.paper.image(getFile('star.png'), locX+94, 7, 13, 13.5);
+		tabContents.push(starImg1);
+	}
+	
+	var unText;
+	if(playerId==myid)
+		unText=this.paper.text(locX+7, 14.5, getName(myid)+" (You)").attr({'text-anchor': 'start'});
+	else if(playerId<=numPlayers)
+		unText=this.paper.text(locX+7, 14.5, getName(playerId)).attr({'text-anchor': 'start'});
+	else
+		unText=this.paper.text(locX+7, 14.5, "User "+(playerId)).attr({'text-anchor': 'start'});
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		unText.attr({'font-size': 14, 'font-family': 'Verdana', 'font-weight': 'bold'});
+	else
+		unText.attr({'font-size': 10, 'font-family': 'Verdana', 'font-weight': 'bold'}); /// 14 yerine 10
+	unText.attr("fill", "#0e76bc");
+	tabContents.push(unText);
+	
+	var opt1Valid=false;
+	var opt2Valid=false;
+	var opt3Valid=false;
+	
+	if((parseInt(variables['Self_Prev_Rnd_Choice'])==1 && myid == playerId) || (parseInt(variables['Others_Prev_Rnd_Choice'])==1 && myid!=playerId))
+	{
+		var prevRndText;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			prevRndText=this.paper.text(locX+82, 31, preprocess(variables['Prev_Rnd_Choice_Text']));
+			prevRndText.attr({'font-size': 14, 'font-family': 'Verdana', 'font-weight': 'bold'});
+		}else{
+			prevRndText=this.paper.text(locX+62, 29, preprocess(variables['Prev_Rnd_Choice_Text'])); 
+			prevRndText.attr({'font-size': 10, 'font-family': 'Verdana', 'font-weight': 'bold'}); 
+		}
+		prevRndText.attr("fill", "#404041");
+		tabContents.push(prevRndText);
+		opt1Valid=true;
+	}
+	
+	if((parseInt(variables['Self_Prev_Rnd_Payoff'])==1 && myid == playerId) || (parseInt(variables['Others_Prev_Rnd_Payoff'])==1 && myid!=playerId))
+	{
+		var prevRndPayoffText;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(opt1Valid)
+				prevRndPayoffText=this.paper.text(locX+82, 57.5, preprocess(variables['Prev_Rnd_Payoff_Text'])); 
+			else
+				prevRndPayoffText=this.paper.text(locX+82, 32, preprocess(variables['Prev_Rnd_Payoff_Text'])); 
+			prevRndPayoffText.attr({'font-size': 14, 'font-family': 'Verdana', 'font-weight': 'bold'});
+		}else{
+			if(opt1Valid)
+				prevRndPayoffText=this.paper.text(locX+62, 54.5, preprocess(variables['Prev_Rnd_Payoff_Text']));  
+			else
+				prevRndPayoffText=this.paper.text(locX+62, 29, preprocess(variables['Prev_Rnd_Payoff_Text']));  
+			prevRndPayoffText.attr({'font-size': 10, 'font-family': 'Verdana', 'font-weight': 'bold'});
+		}
+		prevRndPayoffText.attr("fill", "#404041");
+		tabContents.push(prevRndPayoffText);
+		opt2Valid=true;
+	}
+	
+	if((parseInt(variables['Self_Total_Payoff'])==1 && myid == playerId) || (parseInt(variables['Others_Total_Payoff'])==1 && myid!=playerId))
+	{
+		var totPayoffText;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(opt1Valid&&opt2Valid)
+				totPayoffText=this.paper.text(locX+82, 84, preprocess(variables['Total_Payoff_Text']));
+			else if(opt1Valid||opt2Valid)
+				totPayoffText=this.paper.text(locX+82, 58.5, preprocess(variables['Total_Payoff_Text']));
+			else
+				totPayoffText=this.paper.text(locX+82, 33, preprocess(variables['Total_Payoff_Text']));
+			totPayoffText.attr({'font-size': 14, 'font-family': 'Verdana', 'font-weight': 'bold'});
+		}else{
+			if(opt1Valid&&opt2Valid)
+				totPayoffText=this.paper.text(locX+62, 80, preprocess(variables['Total_Payoff_Text'])); 
+			else if(opt1Valid||opt2Valid)
+				totPayoffText=this.paper.text(locX+62, 54.5, preprocess(variables['Total_Payoff_Text'])); 
+			else
+				totPayoffText=this.paper.text(locX+62, 29, preprocess(variables['Total_Payoff_Text'])); 
+			totPayoffText.attr({'font-size': 10, 'font-family': 'Verdana', 'font-weight': 'bold'});
+		}
+		totPayoffText.attr("fill", "#404041");
+		tabContents.push(totPayoffText);
+		opt3Valid=true;
+	}
+	
+	if((parseInt(variables['Self_Avg_Payoff'])==1 && myid == playerId) || (parseInt(variables['Others_Avg_Payoff'])==1 && myid!=playerId))
+	{
+		var avgPayoffText;
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(opt1Valid&&opt2Valid&&opt3Valid)
+				avgPayoffText=this.paper.text(locX+82, 110.5, preprocess(variables['Avg_Payoff_Text']));
+			else if(((opt1Valid||opt2Valid)&&opt3Valid)||((opt1Valid||opt3Valid)&&opt2Valid)||((opt3Valid||opt2Valid)&&opt1Valid))
+				avgPayoffText=this.paper.text(locX+82, 85, preprocess(variables['Avg_Payoff_Text']));
+			else if(opt1Valid||opt2Valid||opt3Valid)
+				avgPayoffText=this.paper.text(locX+82, 59.5, preprocess(variables['Avg_Payoff_Text']));
+			else
+				avgPayoffText=this.paper.text(locX+82, 30, preprocess(variables['Avg_Payoff_Text']));
+			avgPayoffText.attr({'font-size': 14, 'font-family': 'Verdana', 'font-weight': 'bold'});
+		}else{
+			if(opt1Valid&&opt2Valid&&opt3Valid)
+				avgPayoffText=this.paper.text(locX+62, 105.5, preprocess(variables['Avg_Payoff_Text'])); 
+			else if(((opt1Valid||opt2Valid)&&opt3Valid)||((opt1Valid||opt3Valid)&&opt2Valid)||((opt3Valid||opt2Valid)&&opt1Valid))
+				avgPayoffText=this.paper.text(locX+62, 80, preprocess(variables['Avg_Payoff_Text']));
+			else if(opt1Valid||opt2Valid||opt3Valid)
+				avgPayoffText=this.paper.text(locX+62, 54.5, preprocess(variables['Avg_Payoff_Text'])); 
+			else
+				avgPayoffText=this.paper.text(locX+62, 29, preprocess(variables['Avg_Payoff_Text']));
+			avgPayoffText.attr({'font-size': 10, 'font-family': 'Verdana', 'font-weight': 'bold'});
+		}
+		avgPayoffText.attr("fill", "#404041");
+		tabContents.push(avgPayoffText);
+	}
+	
+	var prevRndChc;
+	if((parseInt(variables['Self_Prev_Rnd_Choice'])==1 && myid == playerId) || (parseInt(variables['Others_Prev_Rnd_Choice'])==1 && myid!=playerId))
+	{
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(this.expRoundNum==1||this.prevRoundChoices[this.expRoundNum-1].length<minimumParticipants)
+				prevRndChc=this.paper.text(locX+82, 44, "N/A");
+			else
+			{
+				var choiceFound=false;
+				for(var k=0; k<this.prevRoundChoices[this.expRoundNum-1].length; k++)
+				{
+					if(this.prevRoundChoices[this.expRoundNum-1][k][0]==playerId)
+					{
+						choiceFound=true;
+						prevRndChc=this.paper.text(locX+82, 44, this.prevRoundChoices[this.expRoundNum-1][k][1]+"");
+						break;
+					}
+				}
+				if(!choiceFound)
+					prevRndChc=this.paper.text(locX+82, 44, "N/A");
+			}
+			prevRndChc.attr({'font-size': 14, 'font-family': 'Verdana'});
+		}else{
+			if(this.expRoundNum==1||this.prevRoundChoices[this.expRoundNum-1].length<minimumParticipants)
+				prevRndChc=this.paper.text(locX+62, 41, "N/A");
+			else
+			{
+				var choiceFound=false;
+				for(var k=0; k<this.prevRoundChoices[this.expRoundNum-1].length; k++)
+				{
+					if(this.prevRoundChoices[this.expRoundNum-1][k][0]==playerId)
+					{
+						choiceFound=true;
+						prevRndChc=this.paper.text(locX+62, 41, this.prevRoundChoices[this.expRoundNum-1][k][1]+""); 
+						break;
+					}
+				}
+				if(!choiceFound)
+					prevRndChc=this.paper.text(locX+62, 41, "N/A"); 
+			}
+			prevRndChc.attr({'font-size': 10, 'font-family': 'Verdana'});
+		}
+		prevRndChc.attr("fill", "#404041");
+		tabContents.push(prevRndChc);
+	}
+	
+	var prevRndPo;
+	if((parseInt(variables['Self_Prev_Rnd_Payoff'])==1 && myid == playerId) || (parseInt(variables['Others_Prev_Rnd_Payoff'])==1 && myid!=playerId))
+	{
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(opt1Valid)
+				prevRndPo=this.paper.text(locX+82, 70.5, prevRoundPayoffs[playerId]);
+			else
+				prevRndPo=this.paper.text(locX+82, 44, prevRoundPayoffs[playerId]);
+			prevRndPo.attr({'font-size': 14, 'font-family': 'Verdana'});
+		}else{
+			if(opt1Valid)
+				prevRndPo=this.paper.text(locX+62, 66.5, prevRoundPayoffs[playerId]);
+			else
+				prevRndPo=this.paper.text(locX+62, 41, prevRoundPayoffs[playerId]);
+			prevRndPo.attr({'font-size': 10, 'font-family': 'Verdana'});
+		}
+		prevRndPo.attr("fill", "#404041");
+		tabContents.push(prevRndPo);
+	}
+
+	var totPo;
+	if((parseInt(variables['Self_Total_Payoff'])==1 && myid == playerId) || (parseInt(variables['Others_Total_Payoff'])==1 && myid!=playerId))
+	{	
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(opt1Valid&&opt2Valid)
+				totPo=this.paper.text(locX+82, 97, totalPayoffs[playerId]+"");
+			else if(opt1Valid||opt2Valid)
+				totPo=this.paper.text(locX+82, 71.5, totalPayoffs[playerId]+"");
+			else
+				totPo=this.paper.text(locX+82, 46, totalPayoffs[playerId]+"");
+			totPo.attr({'font-size': 14, 'font-family': 'Verdana'});
+		}else{
+			if(opt1Valid&&opt2Valid)
+				totPo=this.paper.text(locX+62, 92, totalPayoffs[playerId]+"");
+			else if(opt1Valid||opt2Valid)
+				totPo=this.paper.text(locX+62, 66.5, totalPayoffs[playerId]+"");
+			else
+				totPo=this.paper.text(locX+62, 41, totalPayoffs[playerId]+"");
+			totPo.attr({'font-size': 10, 'font-family': 'Verdana'});
+		}
+		totPo.attr("fill", "#404041");
+		tabContents.push(totPo);
+	}
+
+	var avgPo;
+	if((parseInt(variables['Self_Avg_Payoff'])==1 && myid == playerId) || (parseInt(variables['Others_Avg_Payoff'])==1 && myid!=playerId))
+	{
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+			if(opt1Valid&&opt2Valid&&opt3Valid)
+				avgPo=this.paper.text(locX+82, 123.5, averagePayoffs[playerId]+"");
+			else if(((opt1Valid||opt2Valid)&&opt3Valid)||((opt1Valid||opt3Valid)&&opt2Valid)||((opt3Valid||opt2Valid)&&opt1Valid))
+				avgPo=this.paper.text(locX+82, 98, averagePayoffs[playerId]+"");
+			else if(opt1Valid||opt2Valid||opt3Valid)
+				avgPo=this.paper.text(locX+82, 72.5, averagePayoffs[playerId]+"");
+			else
+				avgPo=this.paper.text(locX+82, 47, averagePayoffs[playerId]+"");
+			avgPo.attr({'font-size': 14, 'font-family': 'Verdana'});
+		}else{
+			if(opt1Valid&&opt2Valid&&opt3Valid)
+				avgPo=this.paper.text(locX+62, 117.5, averagePayoffs[playerId]+"");
+			else if(((opt1Valid||opt2Valid)&&opt3Valid)||((opt1Valid||opt3Valid)&&opt2Valid)||((opt3Valid||opt2Valid)&&opt1Valid))
+				avgPo=this.paper.text(locX+62, 92, averagePayoffs[playerId]+"");
+			else if(opt1Valid||opt2Valid||opt3Valid)
+				avgPo=this.paper.text(locX+62, 66.5, averagePayoffs[playerId]+"");
+			else
+				avgPo=this.paper.text(locX+62, 41, averagePayoffs[playerId]+"");
+			avgPo.attr({'font-size': 10, 'font-family': 'Verdana'});
+		}
+		avgPo.attr("fill", "#404041");
+		tabContents.push(avgPo);
+	}
+	
+	var hiddenRect;
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		hiddenRect = paper.rect(locX, 5, 165, 130, 5);
+	else
+		hiddenRect = paper.rect(locX, 5, 125, 120, 5); 
+	hiddenRect.attr({opacity: 0});
+	hiddenRect.attr("fill", "red");
+	hiddenRect.attr("cursor", "pointer");
+	tabContents.push(hiddenRect);
+	tabContents[tabContents.length-1].hover(function(){this.g = this.glow({color: "#f7941e", width: 3});}, function(){this.g.remove();});
+	
+	return tabContents;
+}
+
+function beginExpRound()
+{
+	for(var i=0; this.arrowButs!=undefined&&this.arrowButs!=null&&i<this.arrowButs.length; i++)
+		if(this.arrowButs[i])
+			this.arrowButs[i].remove();
+	if(this.roundText==undefined){
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			this.roundText=this.paper.text(400, 159, "");
+		else
+			this.roundText=this.paper.text(400, 149, ""); 
+	}
+	this.roundText.attr({text: "Round "+(this.expRoundNum)+" of "+variables['total_rounds_count']});
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		this.roundText.attr({'font-size': 26, 'font-family': 'Verdana'});
+	else
+		this.roundText.attr({'font-size': 24, 'font-family': 'Verdana'});
+	this.roundText.attr("fill", "#0e76bc");
+
+	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+			if(this.step2TimeRemCaptionText==undefined)
+			{
+				this.step2TimeRemCaptionText=this.paper.text(680, 15, "");
+				this.step2TimeRemCaptionText.attr({'font-size': 24, 'font-family': 'Verdana'});
+				this.step2TimeRemCaptionText.attr({text: "Time Remaining:"});
+				this.step2TimeRemCaptionText.attr("fill", "#0e76bc");			
+			}
+			if(this.step2TimeRemText==undefined)
+			{
+				this.step2TimeRemText=this.paper.text(680, 45, "");
+				this.step2TimeRemText.attr({'font-size': 22, 'font-family': 'Verdana'});	
+				this.step2TimeRemText.attr("fill", "#404041");
+			}
+	}else{
+		if(numPlayers+parseInt(variables['Bot_Count'])>4)
+		{	
+			if(this.step2TimeRemCaptionText==undefined)
+			{
+				this.step2TimeRemCaptionText=this.paper.text(725, 13, "");
+				this.step2TimeRemCaptionText.attr({'font-size': 15, 'font-family': 'Verdana', 'font-weight': 'bold'});
+				this.step2TimeRemCaptionText.attr({text: "Time Remaining:"});
+				this.step2TimeRemCaptionText.attr("fill", "#0e76bc");
+			}
+			if(this.step2TimeRemText==undefined)
+			{
+				this.step2TimeRemText=this.paper.text(725, 40, "");
+				this.step2TimeRemText.attr({'font-size': 15, 'font-family': 'Verdana'});
+				this.step2TimeRemText.attr("fill", "#404041");
+			}
+		}
+		else
+		{
+			if(this.step2TimeRemCaptionText==undefined)
+			{
+				this.step2TimeRemCaptionText=this.paper.text(690, 15, "");
+				this.step2TimeRemCaptionText.attr({'font-size': 18, 'font-family': 'Verdana'});
+				this.step2TimeRemCaptionText.attr({text: "Time Remaining:"});
+				this.step2TimeRemCaptionText.attr("fill", "#0e76bc");			
+			}
+			if(this.step2TimeRemText==undefined)
+			{
+				this.step2TimeRemText=this.paper.text(690, 35, "");
+				this.step2TimeRemText.attr({'font-size': 16, 'font-family': 'Verdana'});	
+				this.step2TimeRemText.attr("fill", "#404041");
+			}
+		}
+	}
+	countDownStep2();
+	$('#instructiontable').html('');
+	setupInfoTable();
+	setupButtons();
+	
+	fillStatsContainer();
+	
+	$("#resultimage").attr("src", getFile("nophoto.png"));
+	$("#resulttext").html("");
+	
+	if(iControlBots)
+	{
+	//	if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		if(parseInt(variables['Bot_Count'])>0&&waitThisRound&&parseInt(variables["Enable Polling"])==1)
+		{
+			var botVal="";
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<this.playersForRound[this.expRoundNum-1].length; j++)
+				{
+					if(this.playersForRound[this.expRoundNum-1][j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+			if(botVal.length>0)
+				submit(botVal);
+		}
+	}
+}
+
+function setupButtons()
+{
+	var butshtml="<tr><td width=\"20\"></td><td width=\"140\"><div id=\"but1\" style=\"width: 140px; height: 50px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but2\" style=\"width: 140px; height: 50px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but3\" style=\"width: 140px; height: 50px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but4\" style=\"width: 140px; height: 50px; position:relative;\"></div></td><td width=\"15\"></td><td width=\"140\"><div id=\"but5\" style=\"width: 140px; height: 50px; position:relative;\"></div></td><td width=\"20\"></td></tr>";
+	$("#buts").html(butshtml);
+	$('#selectedbuttext').html("&nbsp;");
+	if(parseInt(variables['Button_Count'])==2)
+	{
+		$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but2_2Pressed();$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");
+		$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but4_2Pressed();$('#but2').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");
+	}
+	else if(parseInt(variables['Button_Count'])==3)
+	{
+		$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but2_3Pressed();$('#but3').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");
+		$("#but3").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but3_3Pressed();$('#but2').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");
+		$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but4_3Pressed();$('#but2').html('');$('#but3').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>");
+	}
+	else if(parseInt(variables['Button_Count'])==4)
+	{
+		$("#buts").html("<tr><td width=\"24\"></td><td width=\"170\"><div id=\"but1\" style=\"width: 170px; height: 50px; position:relative;\"></div></td><td width=\"24\"></td><td width=\"170\"><div id=\"but2\" style=\"width: 170px; height: 50px; position:relative;\"></div></td><td width=\"24\"></td><td width=\"170\"><div id=\"but4\" style=\"width: 170px; height: 50px; position:relative;\"></div></td><td width=\"24\"></td><td width=\"170\"><div id=\"but5\" style=\"width: 170px; height: 50px; position:relative;\"></div></td><td width=\"24\"></td></tr>");
+		$("#but1").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but1_4Pressed();$('#but2').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");
+		$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but2_4Pressed();$('#but1').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");
+		$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but4_4Pressed();$('#but1').html('');$('#but2').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>");
+		$("#but5").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but5_4Pressed();$('#but1').html('');$('#but2').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_4_Text'])+"</a></p>");
+	}
+	else if(parseInt(variables['Button_Count'])==5)
+	{
+		$("#but1").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but1_5Pressed();$('#but2').html('');$('#but3').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_1_Text'])+"</a></p>");
+		$("#but2").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but2_5Pressed();$('#but1').html('');$('#but3').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_2_Text'])+"</a></p>");
+		$("#but3").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but3_5Pressed();$('#but1').html('');$('#but2').html('');$('#but4').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_3_Text'])+"</a></p>");
+		$("#but4").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but4_5Pressed();$('#but1').html('');$('#but2').html('');$('#but3').html('');$('#but5').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_4_Text'])+"</a></p>");
+		$("#but5").html("<p align=\"center\"><a class=\"mybutton\" onclick=\"but5_5Pressed();$('#but1').html('');$('#but2').html('');$('#but3').html('');$('#but4').html('');\" OnMouseOver=\"this.style.cursor='pointer'\">"+preprocess(variables['Button_5_Text'])+"</a></p>");
+	}
+}
+
+function initializeExperimentDetails()
+{
+	//begin but, next round but, syncronization?
+	//$('#begininsbut').hide();
+	$('#nextrndbut').hide();
+	
+	if(myid==1)
+		iControlBots = true;
+	$('#yourearntext').html(preprocess(variables['Prev_Rnd_Payoff_Text']));
+	$('#pollingtext').html(preprocess(variables['Polling_Text']));
+	$("#pollingimage").attr("src", getFile("wait.gif"));
+
+	this.expRoundNum=1;
+	this.Step1Timer=parseInt(variables['instruction_timer'])+1;
+	this.Step2Timer=parseInt(variables['experiment_round_timer'])+1;
+	this.Step3Timer=parseInt(variables['result_timer'])+1;
+	this.Step4Timer=parseInt(variables['end_game_timer'])+1;
+	
+	for(var m=0; m<minimumParticipants-1; m++)
+		this.payoffcaption.push(preprocess(variables['Button_1_Text']));
+	recursivepayoffcaption(0, minimumParticipants-1, parseInt(variables['Button_Count']));
+	
+	for(var i=1; i<=parseInt(variables['total_rounds_count']); i++)
+		this.prevRoundChoices[i]=new Array();
+		
+	for(var i=1; i<=numPlayers+parseInt(variables['Bot_Count']); i++)
+	{
+		prevRoundPayoffs[i]=(0).toFixed(2);
+		totalPayoffs[i]=(0).toFixed(2);
+		averagePayoffs[i]=(0).toFixed(2);
+	}
+	
+	var resulttablehtml="<thead><tr style=\"height:25px; line-height:25px;\"><th><span style='padding-left:7px;'>Rank</span></th><th><span style='padding-left:7px;'>Players</span></th><th><span style='padding-left:7px;'>Prev. Round Payoff</span></th><th><span style='padding-left:7px;'>Score Board</span></th></tr></thead><tbody>";
+	for(var i=0; i<numPlayers+parseInt(variables['Bot_Count']); i++)
+	{
+		resulttablehtml+=("<tr style=\"height:25px; line-height:25px;\"><td><span style='padding-left:7px;'>"+(i+1)+"</span></td><td><span style='padding-left:7px;'>");
+		if(i<numPlayers)
+		{
+			if(i+1==myid)
+				resulttablehtml+=("You</span></td><td><span style='padding-left:7px;'>"+(0).toFixed(2)+"</span></td><td><span style='padding-left:7px;'>"+(0).toFixed(2)+"</span></td></tr>");
+			else
+				resulttablehtml+=(getName(i+1)+"</span></td><td><span style='padding-left:7px;'>"+(0).toFixed(2)+"</span></td><td><span style='padding-left:7px;'>"+(0).toFixed(2)+"</span></td></tr>");
+		}
+		else
+			resulttablehtml+=(("User "+(i+1))+"</span></td><td><span style='padding-left:7px;'>"+(0).toFixed(2)+"</span></td><td><span style='padding-left:7px;'>"+(0).toFixed(2)+"</span></td></tr>");
+	}
+	resulttablehtml+="</tbody>";
+	$('#resulttable').html(resulttablehtml);
+	$('#resulttable').fixedHeaderTable({ altClass: 'odd'});
+
+	if(parseInt(variables["instruction_type"])==1)
+		getStaticInstructions(instructionsPage);
+	if(parseInt(variables["instruction_type"])==2)
+		getDynamicInstructions(instructionsPage);
+	$('#insttimer').html(variables['instruction_timer']);
+	countDownStep1();
+
+	setupInfoTable();
+	//setupButtons();
+	
+	//send the information of which players will play in which rounds
+	if(myid==1)
+	{
+		var roundsstr="";
+		for(var m=0; m <parseInt(variables['total_rounds_count']); m++)
+		{
+			var orderarr=new Array();
+			var tmpnm=Math.floor(Math.random()*(numPlayers+parseInt(variables['Bot_Count'])))+1;
+			orderarr.push(tmpnm);
+			for(var k=1; k<=minimumParticipants-1; k++)
+			{
+				do{
+					tmpnm=Math.floor(Math.random()*(numPlayers+parseInt(variables['Bot_Count'])))+1;
+				}
+				while(orderExists(orderarr, tmpnm));
+				orderarr.push(tmpnm);
+			}
+
+			roundsstr+="<activePlayers expRound=\""+(m+1)+"\">";
+			for(var g=0; g<orderarr.length; g++)
+			{
+				if(g==orderarr.length-1)
+					roundsstr+=(orderarr[g]+"</activePlayers>");
+				else
+					roundsstr+=(orderarr[g]+",");
+			}
+		}
+
+		////unique experiment id
+		//roundsstr="["+((new Date()).getTime())+"]"+roundsstr;
+		
+		//submit(roundsstr);
+		submitBot(0, currentRound, roundsstr);
+	}
+}
+
+function setupInfoTable()
+{
+	var infohtml="";
+	for(var i=1; i<=parseInt(variables['information_row_count']); i++)
+	{
+		infohtml+="<tr>";
+		if(i>1)
+		{
+			for(var j=1; j<=parseInt(variables['information_column_count']); j++)
+				infohtml+="<td width=\"352\" height=\"11\" colspan=\"3\"></td>";
+			infohtml+="</tr><tr>";
+		}
+		for(var j=1; j<=parseInt(variables['information_column_count']); j++)
+		{
+			var infimg=(variables['information_row'+i+'_column'+j+'_image']&&variables['information_row'+i+'_column'+j+'_image'].length>0)?variables['information_row'+i+'_column'+j+'_image']:"nophoto.png";
+			infohtml+="<td width=\"352\" colspan=\"3\"><div style=\"width:100px; height:100px; margin-left:126px;\"><img class=\"infoimg\" id=\"infoimage"+j+"\" src=\""+getFile(infimg)+"\"><div></td>";
+		}
+		infohtml+="</tr><tr><td width=\"352\" height=\"6\" colspan=\"3\"></td></tr><tr>";
+		for(var j=1; j<=parseInt(variables['information_column_count']); j++)
+			infohtml+="<td width=\"18\" id=\"infotexttdmargin\"></td><td width=\"302\"><div id=\"infotextdiv\"><small id=\"infotext"+j+"\" class='smallinfo'>"+((variables['information_row'+i+'_column'+j+'_text'])?preprocess(variables['information_row'+i+'_column'+j+'_text']):"")+"</small></div></td><td width=\"18\" id=\"infotexttdmargin\" ></td>";
+		infohtml+="</tr>";
+	}
+	$("#infotable").html(infohtml);
+}
+
+function orderExists(arr, nm)
+{
+	for(var i=0; i<arr.length; i++)
+	{
+		if(arr[i]==nm)
+			return true;
+	}
+	return false;
+}
+
+function getPlayersForRound(i)
+{
+	return this.playersForRound[i];
+}
+
+function but2_2Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_1_Text'])+"</answer>"+botVal);
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'125px'});
+	else
+		$("#but2").animate({left:'155px'});
+}
+
+function but4_2Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{		
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_2_Text'])+"</answer>"+botVal);
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'185px'});
+	else
+		$("#but4").animate({right:'155px'});
+}
+
+function but2_3Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_1_Text'])+"</answer>"+botVal);
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'125px'});
+	else
+		$("#but2").animate({left:'155px'});
+}
+
+function but3_3Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_2_Text'])+"</answer>"+botVal);
+	$('#but3').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+}
+
+function but4_3Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_3_Text'])+"</answer>"+botVal);
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_3_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_3_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'185px'});
+	else
+		$("#but4").animate({right:'155px'});
+}
+
+function but1_4Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_1_Text'])+"</answer>"+botVal);
+	$('#but1').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text']+"</a></p>"));
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	$("#but1").animate({left:'282px'});
+}
+
+function but2_4Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_2_Text'])+"</answer>"+botVal);
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'75px'});
+	else
+		$("#but2").animate({left:'95px'});
+}
+
+function but4_4Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_3_Text'])+"</answer>"+botVal);
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_3_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_3_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'115px'});
+	else
+		$("#but4").animate({right:'95px'});
+}
+
+function but5_4Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_4_Text'])+"</answer>"+botVal);
+	$('#but5').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_4_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_4_Text']));
+	$("#but5").animate({right:'282px'});
+}
+
+function but1_5Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_1_Text'])+"</answer>"+botVal);
+	$('#but1').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_1_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_1_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but1").animate({left:'280px'});
+	else
+		$("#but1").animate({left:'310px'});
+}
+
+function but2_5Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_2_Text'])+"</answer>"+botVal);
+	$('#but2').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_2_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_2_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but2").animate({left:'135px'});
+	else
+		$("#but2").animate({left:'155px'});
+}
+
+function but3_5Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_3_Text'])+"</answer>"+botVal);
+	$('#but3').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_3_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_3_Text']));
+}
+
+function but4_5Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_4_Text'])+"</answer>"+botVal);
+	$('#but4').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_4_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_4_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but4").animate({right:'175px'});
+	else
+		$("#but4").animate({right:'155px'});
+}
+
+function but5_5Pressed()
+{
+	var botVal="";
+	if(iControlBots)
+	{
+		//if(parseInt(variables['Bot_Count'])==0) // send bot answer for disconnected player
+		//	submitBotAnswer();
+		//else
+		{
+			for(var i=1; i<=parseInt(variables['Bot_Count']); i++)
+			{
+				var botIncluded=false;
+				for(var j=0; j<getPlayersForRound(this.expRoundNum-1).length; j++)
+				{
+					if(getPlayersForRound(this.expRoundNum-1)[j]==numPlayers+i)
+						botIncluded=true;
+				}
+				if(botIncluded)
+					botVal+=("<answer subject=\""+(numPlayers+i)+"\" expRound=\""+this.expRoundNum+"\">"+botAnswer()+"</answer>");
+			}
+		}
+	}
+	submit("<answer subject=\""+myid+"\" expRound=\""+this.expRoundNum+"\">"+preprocess(variables['Button_5_Text'])+"</answer>"+botVal);
+	$('#but5').html("<p align='center'><a class='mybuttonpressed'> "+preprocess(variables['Button_5_Text'])+"</a></p>");
+	$('#selectedbuttext').html(preprocess(variables['Your_Choice_Text'])+preprocess(variables['Button_5_Text']));
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+		$("#but5").animate({right:'340px'});
+	else
+		$("#but5").animate({right:'310px'});
+}
+
+</script>
+
+
